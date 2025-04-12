@@ -1,0 +1,36 @@
+INSERT INTO hospital (hospital_id, name, address) VALUES
+(1, 'SÖS', 'Söder'),
+(2, 'Sahlgrenska', 'Sahlgrenska'),
+(3, 'Högsbo Sjukhus', 'Högsbo');
+
+INSERT INTO department (department_id, name) VALUES
+(1, 'kardiologi'),
+(2, 'neurologi'),
+(3, 'ortopedi'),
+(4, 'medicin');
+
+INSERT INTO doctor (doctor_id, name) VALUES
+(1, 'Alba Albason'),
+(2, 'Viktor Viktorson'),
+(3, 'Ada Lovelace'),
+(4, 'Dr Who');
+
+INSERT INTO HospitalDepartment (hospital_id, department_id) VALUES
+(1, 1),
+(1, 2),
+(2, 1),
+(2, 4),
+(2, 2),
+(3, 2);
+
+INSERT INTO DoctorDepartment (doctor_id, department_id) VALUES
+(1, 1),
+(2, 1),
+(4, 4),
+(4, 1);
+
+INSERT INTO DoctorHospital (doctor_id, hospital_id) VALUES
+(1, 1),
+(2, 1),
+(4, 2),
+(4, 1);
